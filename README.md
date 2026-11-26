@@ -7,10 +7,10 @@ This repository contains the full primary application source: a Next.js customer
 ## What is implemented
 
 - Public product and brand catalog, search/filtering, product variants, favorites and cart.
-- Customer phone authentication, checkout, order history and order actions.
+- Customer phone sign-in with a development SMS adapter, plus checkout screens, order history and order actions. A production SMS provider is still needed.
 - Brand account login, product/variant editing, publication, order management and financial views.
 - Backend authorization, PostgreSQL persistence, Redis caching, payment webhooks and asynchronous jobs.
-- Provider adapters for payments, delivery, email and object storage. These require your own accounts for real use; they are not enabled by the local catalog demo.
+- Provider adapters for payments, delivery, email and object storage. The catalog demo runs locally. Live checkout still needs order-cancellation fixes, payment-provider verification and a production SMS adapter.
 
 The verified demo creates a fictional product in the actual brand portal, checks its API and storefront visibility, changes its stock, then archives it and checks that it disappears from the public catalog. It uses a fresh local database and no live service credentials. Payment, delivery, email, external media upload and production operation are not claimed by this demonstration.
 

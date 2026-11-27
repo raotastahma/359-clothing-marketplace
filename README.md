@@ -1,8 +1,17 @@
 # 359 Clothing Marketplace
 
-I built 359 Clothing from scratch using AI throughout development. It includes a customer storefront, a brand portal and a backend for managing products and orders. It is ready for catalog and content entry. The project is currently on hold.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/359-logo-white.png">
+  <img src="assets/359-logo.png" alt="359 Clothing" width="190">
+</picture>
+
+I built 359 Clothing from scratch using AI throughout development. It includes a customer storefront, a brand portal and a backend for managing products and orders. It is ready for catalog and content entry.
 
 This repository contains the full primary application source: a Next.js customer storefront, a React/Vite brand portal, a FastAPI backend, shared design tokens, database migrations, background tasks, provider adapters and automated tests. Some portal settings are currently local UI state rather than persisted backend settings. The original product targets a Russian-speaking market, so its interface still contains Russian copy. This portfolio documentation is in English.
+
+## Visit the storefront
+
+[Open the 359 Clothing catalog](https://359-shop.raotastahma.ru/shop). Browse the collection or select **New** or **Sale** from the storefront. For the brand experience, the local setup below lets you create a product, publish it to the storefront and update its stock.
 
 ## What is implemented
 
@@ -16,7 +25,7 @@ The verified demo creates a fictional product in the actual brand portal, checks
 
 ## Run the local demo
 
-Requirements: Node.js 20.9+, Python 3.12+, `uv`, Docker Compose and Chromium for Playwright (`npx playwright install chromium` from `src/web`). On this workstation Docker uses Colima's `default` profile, whose VM data is on the external SSD. The Compose project is isolated as `portfolio-359-demo`; published ports bind only to loopback.
+Requirements: Node.js 20.9+, Python 3.12+, `uv`, Docker Compose and Chromium for Playwright (`npx playwright install chromium` from `src/web`). The Compose project is isolated as `portfolio-359-demo`; published ports bind only to loopback.
 
 From the repository root:
 
@@ -89,6 +98,6 @@ The named demo database volume is retained. Delete it only when you deliberately
 
 ## Portfolio preparation
 
-The complete primary application directories are retained. Private Git history, server deployment files, production environment files, operational tasks, personal/legal documents and production catalogs are excluded. Contact domains and seed accounts were made fictional. Remote campaign photographs and unverified binary branding were replaced by original SVG placeholders. Dependencies were refreshed after advisory checks, and the documented CORS environment parsing was corrected with regression coverage.
+The complete primary application directories are retained. Private Git history, server deployment files, production environment files, operational tasks, personal/legal documents and production catalogs are excluded. Contact domains and seed accounts were made fictional. The local demo uses placeholder artwork for campaign and catalog imagery. This page shows the original storefront wordmark. Dependencies were refreshed after advisory checks, and the documented CORS environment parsing was corrected with regression coverage.
 
 See [architecture](docs/architecture.md), [API guide](docs/api.md), [security notes](docs/security.md) and [verification](docs/verification.md). No open-source license has been selected.

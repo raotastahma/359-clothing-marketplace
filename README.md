@@ -1,9 +1,11 @@
 # 359 Clothing Marketplace
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/359-logo-white.png">
-  <img src="assets/359-logo.png" alt="359 Clothing" width="190">
-</picture>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/359-logo-white.png">
+    <img src="assets/359-logo.png" alt="359 Clothing" width="190">
+  </picture>
+</p>
 
 I built 359 Clothing from scratch using AI throughout development. It includes a customer storefront, a brand portal and a backend for managing products and orders. It is ready for catalog and content entry.
 
